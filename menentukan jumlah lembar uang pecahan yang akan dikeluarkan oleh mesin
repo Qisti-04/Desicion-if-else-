@@ -1,0 +1,40 @@
+//menentukan jumlah lembar uang pecahan yang akan dikeluarkan oleh mesin
+#include <iostream>
+using namespace std;
+int main() {
+    int uang, lembar;
+    
+    cout << "Masukkan jumlah uang : ";
+    cin >> uang;
+    
+    if (uang >= 100000) {
+        lembar = uang / 100000;
+        uang %= 100000;
+        cout << "100000 :" << lembar << "lembar\n";
+    } if (uang >= 50000) {
+        lembar = uang / 50000;
+        uang %= 50000;
+        cout << "50000 :" << lembar << "lembar\n";
+    } if (uang >= 20000) {
+        lembar = uang / 20000;
+        uang %= 20000;
+        cout << "20000 :" << lembar << "lembar\n";
+    } if (uang >= 10000) {
+        lembar = uang / 10000;
+        uang %= 10000;
+        cout << "50000 :" << lembar << "lembar\n";
+    } if (uang >= 5000) {
+        lembar = uang / 5000;
+        uang %= 5000;
+        cout << "5000 :" << lembar << "lembar\n";
+    } if (uang >= 2000) {
+        lembar = uang / 2000;
+        uang %= 2000;
+        cout << "2000 :" << lembar << "lembar\n";
+    } if (uang >= 1000) {
+        lembar = uang / 1000;
+        uang %= 1000;
+        cout << "1000 :" << lembar << "lembar\n";
+    }
+return 0;
+}
